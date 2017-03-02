@@ -81,7 +81,7 @@ while i < treeHeight - 1:
     continue
 print((treeHeight + 1) * ' ' + '#')
 
-#Derek's Answer Below
+# Derek's Answer Below
 # Get the number of rows for the tree
 tree_height = input('How tall is the tree: ')
 
