@@ -81,35 +81,43 @@
 # print("Sum = ", sum)
 # print(".1 + .1 + .1 - .3", .1 + .1 + .1 - .3)
 
-print(type(3))
-print(type(3.14))
-print(type("3"))
-print(type('3'))
+# print(type(3))
+# print(type(3.14))
+# print(type("3"))
+# print(type('3'))
+#
+# samp_string = "This is a very important string"
+#
+# # print(samp_string[0])
+# # print(samp_string[-1])
+# # print(samp_string[3+5])
+#
+# print("Length: ", len(samp_string))
+# print(samp_string[0:4])
+# print(samp_string[8:])
+# print("Hello " * 5)
+#
+# num_string = str(4)  #convert integers to strings
+#
+# for char in samp_string:
+#     print(char)
+#
+# for i in range(0, len(samp_string)-1, 2):  # -1, since it's zero indexed
+#     print(samp_string[i] + samp_string[i+1])
+#
+# # A - Z 65 - 90
+# # a - z 97 - 122
+#
+# print("A = ", ord("A"))
+# print("65 = ", chr(65))
 
-samp_string = "This is a very important string"
+# STRING PROBLEM
+# Enter a string to hide in uppercase : HIDE
+# convert to unicode numbers --> secret message : "35647890"
+# Original message : HIDE
 
-# print(samp_string[0])
-# print(samp_string[-1])
-# print(samp_string[3+5])
-
-print("Length: ", len(samp_string))
-print(samp_string[0:4])
-print(samp_string[8:])
-print("Hello " * 5)
-
-num_string = str(4)  #convert integers to strings
-
-for char in samp_string:
-    print(char)
-
-for i in range(0, len(samp_string)-1, 2):  # -1, since it's zero indexed
-    print(samp_string[i] + samp_string[i+1])
-
-# A - Z 65 - 90
-# a - z 97 - 122
-
-print("A = ", ord("A"))
-print("65 = ", chr(65))
-
-
+message = input("Enter a string to hide: ")
+hiddenMessage = message.upper()
+for i in range(0, len(hiddenMessage)):
+    print(ord(hiddenMessage[i]), end='')
 
